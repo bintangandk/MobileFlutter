@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Saya Sedang Belajar Mobile Flutter'),
+      home: const MyHomePage(title: 'Menghitung IP'),
     );
   }
 }
@@ -123,10 +123,10 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'Nilai Hasil Ip',
+              'Hasil IP :',
             ),
             Text(
-              ' $_ipk',
+              ' ${_ipk.toStringAsFixed(2)}',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
             // TextFormField(
